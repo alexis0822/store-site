@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBANX - Streetwear Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!-- Snipcart CSS -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">URBANX</a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+            </ul>
+            
+            <button class="snipcart-checkout cart-button">
+                <i class="snipcart-cart-icon"></i>
+                Cart
+                <span class="snipcart-items-count cart-count">0</span>
+            </button>
+            
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-subtitle">New Collection</p>
+            <h1 class="hero-title">DROP 01: OUT NOW</h1>
+            <p class="hero-description">
+                Elevate your street style with our latest collection. Bold designs, premium quality, 
+                and the urban edge you've been looking for.
+            </p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section" id="shop">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">HOODIE</div>
+                <div class="product-info">
+                    <h3 class="product-name">Urban Rebel Hoodie</h3>
+                    <p class="product-price">$89.99</p>
+                    <button 
+                        class="snipcart-add-item add-to-cart"
+                        data-item-id="urban-rebel-hoodie"
+                        data-item-price="89.99"
+                        data-item-url="https://your-store-domain.com/products/urban-rebel-hoodie"
+                        data-item-description="Premium quality urban hoodie"
+                        data-item-image="https://your-store-domain.com/images/hoodie.jpg"
+                        data-item-name="Urban Rebel Hoodie">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">T-SHIRT</div>
+                <div class="product-info">
+                    <h3 class="product-name">Street Edge Tee</h3>
+                    <p class="product-price">$49.99</p>
+                    <button 
+                        class="snipcart-add-item add-to-cart"
+                        data-item-id="street-edge-tee"
+                        data-item-price="49.99"
+                        data-item-url="https://your-store-domain.com/products/street-edge-tee"
+                        data-item-description="Classic street style t-shirt"
+                        data-item-image="https://your-store-domain.com/images/tshirt.jpg"
+                        data-item-name="Street Edge Tee">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">JACKET</div>
+                <div class="product-info">
+                    <h3 class="product-name">Night Rider Jacket</h3>
+                    <p class="product-price">$159.99</p>
+                    <button 
+                        class="snipcart-add-item add-to-cart"
+                        data-item-id="night-rider-jacket"
+                        data-item-price="159.99"
+                        data-item-url="https://your-store-domain.com/products/night-rider-jacket"
+                        data-item-description="Premium leather jacket"
+                        data-item-image="https://your-store-domain.com/images/jacket.jpg"
+                        data-item-name="Night Rider Jacket">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snipcart Configuration -->
+    <div hidden id="snipcart" data-api-key="ZTVjMzJkM2EtMmI0YS00MDFhLTkxNDYtMWQwZGFmZDU1Yjk3NjM4ODUwMjc5NDcwODc0NTc1"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: 'ZTVjMzJkM2EtMmI0YS00MDFhLTkxNDYtMWQwZGFmZDU1Yjk3NjM4ODUwMjc5NDcwODc0NTc1',
+            loadStrategy: 'on-user-interaction',
+            addToCartBehavior: {
+                behavior: 'notification'
+            },
+            modalStyle: 'side',
+            // Development mode settings
+            development: true,
+            skipProductUrlValidation: true
+        };
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
