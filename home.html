@@ -57,9 +57,9 @@
                         class="snipcart-add-item add-to-cart"
                         data-item-id="urban-rebel-hoodie"
                         data-item-price="89.99"
-                        data-item-url="https://your-store-domain.com/products/urban-rebel-hoodie"
+                        data-item-url="https://alexis0822.github.io/store-site/home.html"
                         data-item-description="Premium quality urban hoodie"
-                        data-item-image="https://your-store-domain.com/images/hoodie.jpg"
+                        data-item-image="https://placehold.co/400x400/png"
                         data-item-name="Urban Rebel Hoodie">
                         Add to Cart
                     </button>
@@ -75,9 +75,9 @@
                         class="snipcart-add-item add-to-cart"
                         data-item-id="street-edge-tee"
                         data-item-price="49.99"
-                        data-item-url="https://your-store-domain.com/products/street-edge-tee"
+                        data-item-url="https://alexis0822.github.io/store-site/home.html"
                         data-item-description="Classic street style t-shirt"
-                        data-item-image="https://your-store-domain.com/images/tshirt.jpg"
+                        data-item-image="https://placehold.co/400x400/png"
                         data-item-name="Street Edge Tee">
                         Add to Cart
                     </button>
@@ -93,9 +93,9 @@
                         class="snipcart-add-item add-to-cart"
                         data-item-id="night-rider-jacket"
                         data-item-price="159.99"
-                        data-item-url="https://your-store-domain.com/products/night-rider-jacket"
+                        data-item-url="https://alexis0822.github.io/store-site/home.html"
                         data-item-description="Premium leather jacket"
-                        data-item-image="https://your-store-domain.com/images/jacket.jpg"
+                        data-item-image="https://placehold.co/400x400/png"
                         data-item-name="Night Rider Jacket">
                         Add to Cart
                     </button>
@@ -120,7 +120,12 @@
             modalStyle: 'side',
             // Development mode settings
             development: true,
-            skipProductUrlValidation: true
+            skipProductUrlValidation: true,
+            // More permissive settings for testing
+            allowedDomains: ['localhost', 'alexis0822.github.io', 'github.io'],
+            baseUrl: window.location.origin + window.location.pathname,
+            // Disable URL validation completely for testing
+            validateProductUrls: false
         };
     </script>
     <script src="main.js"></script>
